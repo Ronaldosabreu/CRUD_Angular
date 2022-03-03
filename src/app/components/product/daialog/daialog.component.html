@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Deseja mesmo Excluir o produto?</h1>
+<div mat-dialog-content>
+
+  <label for="">Nome: </label>
+  <mat-form-field appearance="fill">
+
+    <input matInput [(ngModel)]="data.name" name="name" disabled>
+  </mat-form-field>
+  <label for="">Preço: </label>
+  <mat-form-field appearance="fill">
+
+    <input matInput [(ngModel)]="data.price" name="price" disabled>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancelar</button>
+  <button mat-button (click)="delete(data.id)">Excluir</button>
+</div>
